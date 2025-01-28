@@ -6,30 +6,45 @@ body {
   margin: 0;
 }
 
+/* hr {
+  grid-column: 1/2;
+} */
+
 .content {
-  height: 60vh;
-  width: 60vw;
+  min-width: 50%;
+  min-height: 50%;
   border: 5px solid grey;
   display: grid;
-  grid-template-rows: 1fr 3fr;
+  /* grid-template-rows: 1fr 3fr; */
 }
 
-.projectHeading {
+.project-heading {
   display: flex;
   justify-content: center;
 }
 
+.projects-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  row-gap: 20px;
+}
+/* .project-content {
+  display: grid;
+  margin: 10px;
+} */
 /* card animation logic from: https://uiverse.io/alexruix/cowardly-ape-35 */
 .card {
-  width: 190px;
-  height: 254px;
+  width: 70%;
+  height: 70%;
   border-radius: 20px;
   background: #f5f5f5;
   position: relative;
-  padding: 1.8rem;
+  padding: 1.5rem;
   border: 2px solid #c3c6ce;
   transition: 0.5s ease-out;
   overflow: visible;
+  margin: 10px;
  }
  
  .card-details {
