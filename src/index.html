@@ -18,31 +18,38 @@
         </div>
         <button class="card-button">More info</button>
       </div>
-      <div class="card">
-        <div class="card-details">
-          <p class="text-title">Project 1</p>
-        </div>
-        <button class="card-button">More info</button>
-      </div>
-      <div class="card">
-        <div class="card-details">
-          <p class="text-title">Project 1</p>
-        </div>
-        <button class="card-button">More info</button>
-      </div>
-      <div class="card">
-        <div class="card-details">
-          <p class="text-title">Project 1</p>
-        </div>
-        <button class="card-button">More info</button>
-      </div>
-      <div class="card">
-        <div class="card-details">
-          <p class="text-title">Project 1</p>
-        </div>
-        <button class="card-button">More info</button>
-      </div>
+      
     </div>
   </div>
+
+  <!-- Modal Structure -->
+<dialog class="modal">
+  <form class="task-form">
+    <h2>Add New Task</h2>
+    
+    <!-- Form Fields -->
+    <label>Title:</label>
+    <input type="text" name="title" required>
+
+    <label>Description:</label>
+    <textarea name="description" rows="3"></textarea>
+
+    <label>Due Date:</label>
+    <input type="date" name="due-date">
+
+    <label>Priority:</label>
+    <select name="priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+
+    <!-- Buttons -->
+    <div class="form-buttons">
+      <button type="submit">Add Task</button>
+      <button type="button" class="close-modal">Cancel</button>
+    </div>
+  </form>
+</dialog>
 </body>
 </html>
