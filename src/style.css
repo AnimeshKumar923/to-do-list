@@ -34,6 +34,19 @@ body {
   margin: 10px;
 } */
 
+.add-task {
+  position: relative;
+  top: -40px;
+  left: 600px;
+  border: solid rgb(31, 233, 81);
+  border-radius: 10px;
+  height: 2.5rem;
+  font-size:medium;
+}
+
+
+/* Code from internet goes below */
+
 /* card animation logic from: https://uiverse.io/alexruix/cowardly-ape-35 */
 .card {
   width: 70%;
