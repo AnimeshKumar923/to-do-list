@@ -2,7 +2,7 @@ body {
   display: flex;
   justify-content: center;
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  background-color: rgb(170, 148, 148);
+  background-color: rgb(89, 18, 95);
   margin: 0;
 }
 
@@ -21,6 +21,7 @@ body {
 .project-heading {
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 .projects-div {
