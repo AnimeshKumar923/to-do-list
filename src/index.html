@@ -9,37 +9,36 @@
   <div class="content">
     <div class="header">
       <h1 class="project-heading">My Projects</h1>
-      <button class="add-task">Add Task</button>
+      <button class="new-task">New Task</button>
     </div>
     <!-- <hr> -->
     <div class="projects-div">
-      <div class="card">
+      <!-- <div class="card">
         <div class="card-details">
           <p class="text-title">Project 1</p>
         </div>
         <button class="card-button">More info</button>
-      </div>
-      
+      </div> -->
     </div>
   </div>
 
-  <!-- Modal Structure -->
+  <!-- Modal Structure || Add Task Form -->
 <dialog class="modal">
   <form class="task-form">
     <h2>Add New Task</h2>
     
     <!-- Form Fields -->
     <label>Title:</label>
-    <input type="text" name="title" required>
+    <input type="text" name="title" class="title" required>
 
     <label>Description:</label>
-    <textarea name="description" rows="3"></textarea>
+    <textarea name="description" rows="3" class="description"></textarea>
 
     <label>Due Date:</label>
-    <input type="date" name="due-date">
+    <input type="date" name="due-date" class="due-date">
 
     <label>Priority:</label>
-    <select name="priority">
+    <select name="priority" class="priority">
       <option value="low">Low</option>
       <option value="medium">Medium</option>
       <option value="high">High</option>
@@ -47,7 +46,7 @@
 
     <!-- Buttons -->
     <div class="form-buttons">
-      <button type="submit">Add Task</button>
+      <button type="submit" class="submit-task">Add Task</button>
       <button type="button" class="close-modal">Cancel</button>
     </div>
   </form>
