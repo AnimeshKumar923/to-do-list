@@ -1,6 +1,5 @@
-// query selectors
 export default function(){
-  let tasksList = JSON.parse(localStorage.getItem("tasks")) || [];  
+  let projectList = JSON.parse(localStorage.getItem("projects")) || [];  
   function createTask(){
     const title = '';
     const dueDate = '';
@@ -24,19 +23,19 @@ export default function(){
     newTask.description = formData.get('description');
     newTask.priority = formData.get('priority');
 
-    tasksList.push(newTask); 
-    localStorage.setItem("tasks", JSON.stringify(tasksList));
+    projectList.push(newTask); 
+    localStorage.setItem("projects", JSON.stringify(projectList));
     form.reset();
     document.querySelector('.modal').close();
-    console.log(tasksList);
+    console.log(projectList);
     updateDisplay();
   })
 
   function updateDisplay(){
-    const tasks = JSON.parse(localStorage.getItem("tasks"));
-    // console.log(tasks);
+    const project = JSON.parse(localStorage.getItem("projects"));
+    // console.log(project);
     // hardcoded; make it dynamic
-    const title = tasks[0].title;;
+    const title = project[0].title;;
     const cardHTML = `
     <div class="card">
       <div class="card-details">
@@ -44,8 +43,11 @@ export default function(){
       </div>
       <button class="card-button">More info</button>
     </div>
-  `;
+    `;
   
   document.querySelector('.projects-div').insertAdjacentHTML('beforeend', cardHTML);
-  }
+}
+  // document.querySelector('.card-button').addEventListener('click', () => {
+    
+  // });
 }

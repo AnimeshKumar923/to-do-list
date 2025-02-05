@@ -13,43 +13,51 @@
     </div>
     <!-- <hr> -->
     <div class="projects-div">
-      <!-- <div class="card">
+      <div class="card">
         <div class="card-details">
           <p class="text-title">Project 1</p>
         </div>
         <button class="card-button">More info</button>
-      </div> -->
+      </div>
     </div>
   </div>
 
   <!-- Modal Structure || Add Task Form -->
-<dialog class="modal">
-  <form class="task-form">
-    <h2>Add New Task</h2>
-    
-    <!-- Form Fields -->
-    <label>Title:</label>
-    <input type="text" name="title" class="title" required>
+  <dialog class="modal">
+    <form class="task-form">
+      <h2>Add New Task</h2>
+      
+      <!-- Form Fields -->
+      <label>Title:</label>
+      <input type="text" name="title" class="title" required>
 
-    <label>Description:</label>
-    <textarea name="description" rows="3" class="description"></textarea>
+      <label>Description:</label>
+      <textarea name="description" rows="3" class="description"></textarea>
 
-    <label>Due Date:</label>
-    <input type="date" name="due-date" class="due-date">
+      <label>Due Date:</label>
+      <input type="date" name="due-date" class="due-date">
 
-    <label>Priority:</label>
-    <select name="priority" class="priority">
-      <option value="low">Low</option>
-      <option value="medium">Medium</option>
-      <option value="high">High</option>
-    </select>
+      <label>Priority:</label>
+      <select name="priority" class="priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
 
-    <!-- Buttons -->
-    <div class="form-buttons">
-      <button type="submit" class="submit-task">Add Task</button>
-      <button type="button" class="close-modal">Cancel</button>
+      <!-- Buttons -->
+      <div class="form-buttons">
+        <button type="submit" class="submit-task">Add Task</button>
+        <button type="button" class="close-task-modal">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+  
+  <dialog class="read-only-modal">
+    <div class="info-box">
+      <div class="card-details">
+        <p class="text-title">Task 1</p>
+      </div>
     </div>
-  </form>
-</dialog>
+  </dialog>
 </body>
 </html>

@@ -1,14 +1,15 @@
 export default function(){
   const modal = document.querySelector('.modal');
-  // const infoBtn = document.querySelector('.card-button');
-  const close = document.querySelector('.close-modal');
+  const infoBtn = document.querySelector('.card-button');
+  const close = document.querySelector('.close-task-modal');
   const newTaskBtn = document.querySelector('.new-task');
-
+  const infoModal = document.querySelector('.read-only-modal');
+  const closeReadOnly = document.querySelector('.close-read-only')
   // When the user clicks on the button, open the modal
-  // infoBtn.addEventListener('click',  () => {
+  infoBtn.addEventListener('click',  () => {
     // show a read-only view of the added information
-    // modal.showModal();
-  // })
+    infoModal.showModal();
+  })
   
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
@@ -21,8 +22,11 @@ export default function(){
     modal.close();
   })
   
+  closeReadOnly.addEventListener('click', () => {
+    infoModal.close();
+  });
+
   newTaskBtn.addEventListener('click', () => {
     modal.showModal();
-    
   })
 };
